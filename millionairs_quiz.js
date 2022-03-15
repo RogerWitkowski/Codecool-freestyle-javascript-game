@@ -26,6 +26,7 @@ const answers_q1 = ["Tik Tok", "Instagram", "Facebook", "Russian Propaganda"]
 const answers_q2 = ["Car", "Shout idi na hui", "Tractor", "Watch TikTok"]
 const answers_q3 = ["Jar with pickles","Stinger","Kalashnikov","Anonymous hacking"]
 const answers_q4 = ["Indeed","Indic","In deep","In dead"]
+const answers_q5 = ["Indeed","Indic","In deep","In dead"]
 
 correct = false
 
