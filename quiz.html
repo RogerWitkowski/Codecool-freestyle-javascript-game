@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Millionairs</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <form action="" method="post">
-<h1 id="question"></h1>
+    <p id="paragraph"></p>
+<p1 id="question"></p1><br><br>
 <input type="radio" id="answer1" name="action" onclick="check_correct()">
-<label for="answer1" id="answer1_label"></label><br>
-<input type="radio" id="answer2" name="action" onclick="check_correct()">
-<label for="answer2" id="answer2_label" ></label><br>
+<label for="answer1" id="answer1_label" class="f-size17"></label><br>
+<input type="radio" id="answer2" name="action" class="f-size17" onclick="check_correct()">
+<label for="answer2" id="answer2_label" class="f-size17" ></label><br>
 <input type="radio" id="answer3" name="action" onclick="check_correct()">
-<label for="answer3" id="answer3_label" ></label><br>
+<label for="answer3" id="answer3_label" class="f-size17" ></label><br>
 <input type="radio" id="answer4" name="action" onclick="check_correct()">
-<label for="answer4" id="answer4_label"></label><br>
+<label for="answer4" id="answer4_label" class="f-size17"></label><br>
     </form>
 <input type="submit" value="Submit" id="submit_button" onclick="check_answer()">
     <script src="millionairs_quiz.js"></script>
