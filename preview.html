@@ -31,6 +31,12 @@
         align-self: center;
        
       }
+      p.demo{
+        margin: auto;
+        color: yellow;
+        font-size: x-large;
+        font-family: "Courier New";
+      }
       #theHead{
         margin: auto;
         color: yellow;
@@ -50,6 +56,20 @@
         left: 50%;
         transform: translate(-50%, -50%);
       }
+      #invisibleStart{
+        border: 2px solid #202028;
+        border-radius: 7px;
+        background-color: #202028;
+        color: #202028;
+        font-size: 32px;
+        font-weight: bold;
+        font-family: "Courier New";
+        width: 5em;
+        margin: 5px auto;
+        position: absolute;
+        top: 66%;
+        left: 12%;
+      }
       #backBtn{
         display: none;
         text-align: center;
@@ -64,10 +84,12 @@
 </head>
 <body>
     <div id="theHead">There is no War!</div>
-    <div id="newGame" onmouseover="this.style.backgroundColor = 'rgb(45, 116, 160'" onmouseout="this.style.backgroundColor = 'lightskyblue'" onclick="intro()">New Game</div>
+    <div id="newGame" onmouseover="this.style.backgroundColor = 'rgb(45, 116, 160'" onmouseout="this.style.backgroundColor = 'lightskyblue'" onclick="foo()">New Game</div>
     <div id="creditBtn" onmouseover="this.style.backgroundColor = 'rgb(45, 116, 160'" onmouseout="this.style.backgroundColor = 'lightskyblue'" onclick="showCredits()">Credits</div>
     <div id="credits">There is no War! <br><br> Made by Roger, Adrian, Kamil, Leon</div>
     <div id="backBtn" onmouseover="this.style.backgroundColor = 'rgb(45, 116, 160'" onmouseout="this.style.backgroundColor = 'lightskyblue'" onclick="goBack()">Back</div>
+    <div id="invisibleStart" onmouseover="this.style.backgroundColor = 'rgb(45, 116, 160'" onmouseout="this.style.backgroundColor = 'lightskyblue'" onclick="intro()">New Game</div>
 </body>
 <script src="menu.js"></script>
+<script src="firstMiniGame.js"></script>
 <html>  
