@@ -1,0 +1,33 @@
+#evilButton {
+    text-align: center;
+    vertical-align: middle;
+    border: 2px solid lightskyblue;
+    border-radius: 7px;
+    position: absolute;
+    white-space: nowrap;
+    font-family: "Courier New";
+    font-weight: bold;
+    font-size: 2rem;
+    background-color: lightskyblue;
+    color: yellow;
+}
+
+#bodyButton {
+    background: #202028;
+    color: #fff;
+    font-family: sans-serif;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+#board {
+    background-color: #CCC;
+    width: 100vmin;
+    height: 100vmin;
+    display: grid;
+    grid-template-rows: repeat(21, 1fr);
+    grid-template-columns: repeat(21, 1fr);
+}
