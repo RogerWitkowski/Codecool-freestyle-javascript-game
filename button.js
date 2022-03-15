@@ -3,7 +3,7 @@ let offSet = 100
 let evilB = document.getElementById('evilButton')
 evilB.addEventListener('click', () => {
     alert('HAHAHAHAHA.....You pass the test!!')
-    window.close()
+    // window.close()
 })
 
 document.addEventListener('mousemove', (e) => {
@@ -40,12 +40,8 @@ function setButtonPosition(left, top){
     if (distanceFromButton(top, windowBox.bottom, buttonBox.height) > 0) {
         top = windowBox.top + offSet
     }
-
-
-
     evilB.style.left = `${left}px`
     evilB.style.top = `${top}px`
-
 }
 
 function distanceFromButton(boxPosition, mousePosition, boxSize){
