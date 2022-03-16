@@ -2,8 +2,13 @@ let offSet = 100
 
 let evilB = document.getElementById('evilButton')
 evilB.addEventListener('click', () => {
-    alert('HAHAHAHAHA.....You pass the test!!')
-    // window.close()
+    alert('HAHAHAHAHA.....You pass the test!! Wait for it!!!!')
+    let song = new Audio('Touch.mp3')
+    song.play()
+    let img = document.createElement("img");
+    img.src = "idiNaChuj.jpg";
+    let block = document.getElementById("x");
+    block.appendChild(img);
 })
 
 document.addEventListener('mousemove', (e) => {
@@ -47,3 +52,7 @@ function setButtonPosition(left, top){
 function distanceFromButton(boxPosition, mousePosition, boxSize){
     return boxPosition - mousePosition + boxSize / 2
 }
+
+
+
+
