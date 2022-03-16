@@ -32,3 +32,10 @@ p1 {
         font-size: medium;
         font-family: "Courier New";;
    }
+
+   .timer {
+        margin-left: 20%;
+        color: yellow;
+        font-size: medium;
+        font-family: "Courier New";
+      }

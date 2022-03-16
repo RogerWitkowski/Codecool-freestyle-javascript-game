@@ -6,7 +6,7 @@ function typeWriter(txt,i,speed,paragraph){
     }
 }
 
-function intro(){ // if you want to add text; Create a new var with your text; duplicate the function with your variables; set the fourth parameter to demo_3 etc
+function intro_millionairs(){ // if you want to add text; Create a new var with your text; duplicate the function with your variables; set the fourth parameter to demo_3 etc
     narrator = document.getElementById('paragraph')
   narrator.innerHTML = '<p class="demo" id="demo_1"></p><p class="demo" id="demo_2"></p><p class="demo" id="demo_3"></p><p class="demo" id="demo_4"></p>';
   var txt_1 = 'A few questions ahead of you';
@@ -19,7 +19,7 @@ function intro(){ // if you want to add text; Create a new var with your text; d
 }
 
 
-intro()
+intro_millionairs()
 
 const questions = ["What is the best news source?", "What is the best way to steal a tank?", "What ist the best anti airforce missles?", "A friend in need is a friend", "Least useful subject in school:", "More that one animal:", "What is the first letter of Alphabet?"]
 const answers_q1 = ["Tik Tok", "Instagram", "Facebook", "Russian Propaganda"]
