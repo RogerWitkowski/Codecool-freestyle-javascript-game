@@ -17,7 +17,7 @@ var goBack = function(){
 
 
 function typeWriter(txt,i,speed,paragraph){  
-  if (i < txt.length) {
+  if (i < txt.length){
     document.getElementById(paragraph).innerHTML += txt.charAt(i);
     i+=1;
     setTimeout(function() {  typeWriter(txt,i,speed, paragraph) }, speed);
