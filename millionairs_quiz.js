@@ -21,12 +21,15 @@ function intro(){ // if you want to add text; Create a new var with your text; d
 
 intro()
 
-const questions = ["What is the best news source?", "What is the best way to steal a tank?", "What ist the best anti airforce missles?", "A friend in need is a friend"]
+const questions = ["What is the best news source?", "What is the best way to steal a tank?", "What ist the best anti airforce missles?", "A friend in need is a friend", "Least useful subject in school:", "More that one animal:", "What is the first letter of Alphabet?"]
 const answers_q1 = ["Tik Tok", "Instagram", "Facebook", "Russian Propaganda"]
 const answers_q2 = ["Car", "Shout idi na hui", "Tractor", "Watch TikTok"]
 const answers_q3 = ["Jar with pickles","Stinger","Kalashnikov","Anonymous hacking"]
 const answers_q4 = ["Indeed","Indic","In deep","In dead"]
-const answers_q5 = ["Indeed","Indic","In deep","In dead"]
+const answers_q5 = ["Sandwich","History","Pencil","Chemistry"]
+const answers_q6 = ["Sheep","Herd","Two animals","Lama"]
+const answers_q7 = ["A:B","B:A","C:D","D:B"]
+
 
 correct = false
 
@@ -67,6 +70,24 @@ function change_text (){
         answer3_label.innerText = answers_q4 [2]
         answer4_label.innerText = answers_q4 [3]
         correct=false}
+    else if (question.innerText == questions [3]) {question.innerText = questions [4],
+        answer1_label.innerText = answers_q5 [0]
+        answer2_label.innerText = answers_q5 [1]
+        answer3_label.innerText = answers_q5 [2]
+        answer4_label.innerText = answers_q5 [3]
+        correct=false}
+    else if (question.innerText == questions [4]) {question.innerText = questions [5],
+        answer1_label.innerText = answers_q6 [0]
+        answer2_label.innerText = answers_q6 [1]
+        answer3_label.innerText = answers_q6 [2]
+        answer4_label.innerText = answers_q6 [3]
+        correct=false}
+    else if (question.innerText == questions [5]) {question.innerText = questions [6],
+        answer1_label.innerText = answers_q7 [0]
+        answer2_label.innerText = answers_q7 [1]
+        answer3_label.innerText = answers_q7 [2]
+        answer4_label.innerText = answers_q7 [3]
+        correct=false}
 
 }
 
@@ -75,12 +96,15 @@ function check_correct (){
     else if (question.innerText == questions [1] && answer3.checked) {correct = true}
     else if (question.innerText == questions [2] && answer1.checked) {correct = true}
     else if (question.innerText == questions [3] && answer2.checked) {correct = true}
+    else if (question.innerText == questions [4] && answer1.checked) {correct = true}
+    else if (question.innerText == questions [5] && answer4.checked) {correct = true}
+    else if (question.innerText == questions [6] && answer3.checked) {correct = true}
     else {correct = false}
 
 }
 
 function check_answer (){
-     if (correct == true && question.innerText == questions [3]) {alert('You\'re lucky, you\'re still alive. We will see how long it will be possible.')}
+     if (correct == true && question.innerText == questions [6]) {alert('You\'re lucky, you\'re still alive. We will see how long it will be possible.')}
 if (correct == true) {change_text()} else {alert('Uuu wrong answer. You better hurry up.')}
 }
 change_text ()
