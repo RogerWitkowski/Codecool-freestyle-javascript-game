@@ -22,13 +22,13 @@ function intro_millionairs(){ // if you want to add text; Create a new var with 
 intro_millionairs()
 
 const questions = ["What is the best news source?", "What is the best way to steal a tank?", "What ist the best anti airforce missles?", "A friend in need is a friend", "Least useful subject in school:", "More that one animal:", "What is the first letter of Alphabet?"]
-const answers_q1 = ["Tik Tok", "Instagram", "Facebook", "Russian Propaganda"]
-const answers_q2 = ["Car", "Shout idi na hui", "Tractor", "Watch TikTok"]
-const answers_q3 = ["Jar with pickles","Stinger","Kalashnikov","Anonymous hacking"]
-const answers_q4 = ["Indeed","Indic","In deep","In dead"]
-const answers_q5 = ["Sandwich","History","Pencil","Chemistry"]
-const answers_q6 = ["Sheep","Herd","Two animals","Lama"]
-const answers_q7 = ["A:B","B:A","C:D","D:B"]
+const answers_q1 = ["a) Tik Tok", "b) Instagram", "c) Facebook", "d) Russian Propaganda"]
+const answers_q2 = ["a) Car", "b) Shout idi na hui", "c) Tractor", "d) Watch TikTok"]
+const answers_q3 = ["a) Jar with pickles","b) Stinger","c)Kalashnikov","d)Anonymous hacking"]
+const answers_q4 = ["a) Indeed","b) Indic","c) In deep","d) In dead"]
+const answers_q5 = ["a) Sandwich","b) History","c) Pencil","d) Chemistry"]
+const answers_q6 = ["a) Sheep","b) Herd","c) Two animals","d) Lama"]
+const answers_q7 = ["a) B","b) A","c) D","d) B"]
 
 
 correct = false
@@ -98,7 +98,7 @@ function check_correct (){
     else if (question.innerText == questions [3] && answer2.checked) {correct = true}
     else if (question.innerText == questions [4] && answer1.checked) {correct = true}
     else if (question.innerText == questions [5] && answer4.checked) {correct = true}
-    else if (question.innerText == questions [6] && answer3.checked) {correct = true}
+    else if (question.innerText == questions [6] && answer2.checked) {correct = true}
     else {correct = false}
 
 }
@@ -108,6 +108,19 @@ function check_answer (){
 if (correct == true) {change_text()} else {alert('Uuu wrong answer. You better hurry up.')}
 }
 change_text ()
+
+// function putin_call (){
+//     putin = document.getElementById("putin")
+//     putin.src = "putin_call.jpeg"
+//         if (question.innerText == questions [0]) {correct = true}
+//     else if (question.innerText == questions [1]) {correct = true}
+//     else if (question.innerText == questions [2]) {correct = true}
+//     else if (question.innerText == questions [3]) {correct = true}
+//     else if (question.innerText == questions [4]) {correct = true}
+//     else if (question.innerText == questions [5]) {correct = true}
+//     else if (question.innerText == questions [6]) {correct = true}
+//     else {correct = false}
+// }
 
 
 

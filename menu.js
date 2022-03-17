@@ -41,7 +41,7 @@ var foo = function(){
   var button = document.createElement('button');
   button.innerHTML = 'click me';
   button.onclick = function(){
-    questions()
+    timer = false
   }
   document.body.appendChild(button);
 }

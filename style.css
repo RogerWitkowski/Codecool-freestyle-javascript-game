@@ -27,7 +27,7 @@ p1 {
       }
 
    .f-size17 {
-         margin: auto;
+
         color: white;
         font-size: medium;
         font-family: "Courier New";;
@@ -39,3 +39,11 @@ p1 {
         font-size: medium;
         font-family: "Courier New";
       }
+   input[type="radio"]{
+
+   }
+
+   img {
+       margin-left: 100px
+   }
+
