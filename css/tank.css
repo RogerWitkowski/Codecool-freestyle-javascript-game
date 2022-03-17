@@ -18,7 +18,7 @@
 
  .player {
      background-color: darkgray;
-     background-image: url("tank.png");
+     background-image: url("static/tank.png");
      background-position: center;
      background-repeat: no-repeat; 
      transform: rotate(0deg);
@@ -26,7 +26,7 @@
 
  .player-down {
     background-color: darkgray;
-    background-image: url("tank.png");
+    background-image: url("static/tank.png");
     background-position: center;
     background-repeat: no-repeat; 
     transform: rotate(180deg);
@@ -34,7 +34,7 @@
 
 .player-left {
     background-color: darkgray;
-    background-image: url("tank.png");
+    background-image: url("static/tank.png");
     background-position: center;
     background-repeat: no-repeat;
     transform: rotate(270deg);
@@ -42,7 +42,7 @@
 
 .player-right {
     background-color: darkgray;
-    background-image: url("tank.png");
+    background-image: url("static/tank.png");
     background-position: center;
     background-repeat: no-repeat; 
     transform: rotate(90deg);
@@ -54,28 +54,28 @@
 
  .grass {
     background-color: darkgray;
-    background-image: url("grass.png");
+    background-image: url("static/grass.png");
     background-position: center;
     background-repeat: no-repeat; 
 }
 
 .brick {
     background-color: darkgray;
-    background-image: url("brick.png");
+    background-image: url("static/brick.png");
     background-position: center;
     background-repeat: no-repeat; 
 }
 
 .exit {
     background-color: darkgray;
-    background-image: url("exit.gif");
+    background-image: url("static/exit.gif");
     background-position: center;
     background-repeat: no-repeat; 
 }
 
 .enemy-up {
     background-color: darkgray;
-    background-image: url("enemy.png");
+    background-image: url("static/enemy.png");
     background-position: center;
     background-repeat: no-repeat;
     transform: rotate(180deg); 
@@ -83,14 +83,14 @@
 
 .enemy-down {
     background-color: darkgray;
-    background-image: url("enemy.png");
+    background-image: url("static/enemy.png");
     background-position: center;
     background-repeat: no-repeat; 
 }
 
 .enemy-left {
     background-color: darkgray;
-    background-image: url("enemy.png");
+    background-image: url("static/enemy.png");
     background-position: center;
     background-repeat: no-repeat;
     transform: rotate(90deg);
@@ -98,7 +98,7 @@
 
 .enemy-right {
     background-color: darkgray;
-    background-image: url("enemy.png");
+    background-image: url("static/enemy.png");
     background-position: center;
     background-repeat: no-repeat;
     transform: rotate(270deg);
@@ -106,7 +106,7 @@
 
 .bullet {
     background-color: darkgray;
-    background-image: url("bullet.png");
+    background-image: url("static/bullet.png");
     background-position: center;
     background-repeat: no-repeat; 
 }

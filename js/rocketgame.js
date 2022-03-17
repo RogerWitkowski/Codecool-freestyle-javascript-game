@@ -18,30 +18,28 @@ var checkDead = setInterval (function(){
     }
 },10)
 
-// function rocket_speed (){
-//     if (points>5 && points < 10) {
-//         block.style.animation = 'block 1000ms infinite linear'
-//     }
-//         else if (points>10 && points < 15) {
-//         block.style.animation = 'block 1700ms infinite linear'
-//     }
-//                 else if (points>15 && points < 25) {
-//         block.style.animation = 'block 1500ms infinite linear'
-//     }
-//                         else if (points>25 && points < 35) {
-//         block.style.animation = 'block 1250ms infinite linear'
-//     }
-//                                 else if (points>35) {
-//         block.style.animation = 'block 1000ms infinite linear'
-//     }
-// }
+function rocket_speed (){
+    if (points >= 10) {
+         setTimeout(function() {  window.location.href="tank.html"; }, 10);
+    }
+    console.log (points)
+    if (points == 1) {
+         block.style.animation = 'block 3000ms infinite linear'
+    }
+    else if (points>5 && points < 10) {
+        block.style.animation = 'block 1900ms infinite linear'
+    }
+}
 
 function jump (){
     if (character.classList != "animate")
     {character.classList.add ("animate")}
+    if (points==0){setTimeout(function (){
+        character.classList.remove("animate")
+    },10 )}
     setTimeout(function (){
         character.classList.remove("animate")
-    },500 )
+    },1200 )
 }
 
 function points_counter (){
@@ -51,5 +49,4 @@ function points_counter (){
         pointsText.innerText = `Your points: ${points}`
         rocket_speed()}
 }
-
 

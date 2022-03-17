@@ -16,7 +16,7 @@ body {
     width: 700px;
     height: 350px;
     border: 1px solid black;
-    background-image: url(background.jpg) ;
+    background-image: url(static/background.jpg) ;
 }
 
 #character {
@@ -34,12 +34,12 @@ body {
     position: relative;
     top:255px;
     left: 600px;
-    background-image: url(rocket.png);
+    background-image: url(static/rocket.png);
     position: relative;
-    animation: block 2s infinite linear;}
+    animation: block 200s infinite linear;}
 
 .animate{
-    animation: jump 500ms infinite;
+    animation: jump 1200ms infinite;
 }
 
 .points {

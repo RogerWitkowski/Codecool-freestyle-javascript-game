@@ -2,13 +2,14 @@ let offSet = 100
 
 let evilB = document.getElementById('evilButton')
 evilB.addEventListener('click', () => {
-    alert('HAHAHAHAHA.....You pass the test!! Wait for it!!!!')
-    let song = new Audio('Touch.mp3')
+    //alert('HAHAHAHAHA.....You pass the test!! Wait for it!!!!')
+    let song = new Audio('static/Touch.mp3')
     song.play()
     let img = document.createElement("img");
-    img.src = "idiNaChuj.jpg";
+    img.src = "static/idiNaChuj.jpg";
     let block = document.getElementById("x");
     block.appendChild(img);
+    setTimeout(function() {  window.location.href="rocketgame.html"; }, 6000);
     
 })
 
