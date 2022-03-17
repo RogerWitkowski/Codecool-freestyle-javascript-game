@@ -1,5 +1,5 @@
 let player;
-let gameSwitch = 1;
+let gameSwitch = 2;
 let game2Switch = 1;
 let gameWidth = 30;
 let gameHeight = 20; 
@@ -436,4 +436,4 @@ function mapLayout2(board) {
         }
 }
 
-window.onload = initGame
+window.onload = initGame2
