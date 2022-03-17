@@ -183,7 +183,7 @@ class Point {
                         initGame2();
                     } else if (game2Switch == 1) {
                         game2Switch = 2
-                        alert("end")
+                        setTimeout(function() {  window.location.href="dodge.html"; }, 500);
                     }
                 } else if(isBullet){
                     youDied();
@@ -205,7 +205,7 @@ class Point {
                         initGame2();
                     } else if (game2Switch == 1) {
                         game2Switch = 2
-                        alert("end")
+                        setTimeout(function() {  window.location.href="dodge.html"; }, 500);
                     }
                 } else if(isBullet){
                     youDied();
@@ -232,7 +232,7 @@ class Point {
                         initGame2();
                     } else if (game2Switch == 1) {
                         game2Switch2 = 2
-                        alert("end")
+                        setTimeout(function() {  window.location.href="dodge.html"; }, 500);
                     }
                 } else if(isBullet){
                     youDied();
@@ -255,7 +255,7 @@ class Point {
                         initGame2();
                     } else if (game2Switch == 1) {
                         game2Switch = 2
-                        alert("end")
+                        setTimeout(function() {  window.location.href="dodge.html"; }, 500);
                     }
                 } else if(isBullet){
                     youDied();
