@@ -3,7 +3,7 @@
     <title>There is no War!</title>
     <style>
       body {
-        background: #202028;
+        background: #292828;
         color: #fff;
         font-family: sans-serif;
         font-size: 2em;
@@ -19,7 +19,7 @@
       #newGame, #creditBtn, #backBtn{
         text-align: center;
         vertical-align: middle;
-        border: 2px solid lightskyblue;
+        border: 2px solid #152569;
         border-radius: 7px;
         background-color: lightskyblue;
         color: yellow;
@@ -36,7 +36,7 @@
         color: yellow;
         font-size: x-large;
         font-family: "Courier New";
-        width: 800px;
+        width: 70vw;
       }
       #theHead{
         margin: auto;
@@ -68,7 +68,7 @@
         width: 7em;
         margin: 5px auto;
         position: absolute;
-        top: 38%;
+        top: 33%;
         left: 42%;
         opacity: 0%;
       }
@@ -82,12 +82,17 @@
         transform: translate(-50%, -50%);
         font-size: 20px;
       }
+
+      #volodimir {
+        border-radius: 15px;
+        border: 5px solid #152569;
+      }
     </style>
 </head>
 <body>
   <br>
-  <div id="theHead">There is no War!</div>
-  <img src="static/volodimir.jpg" alt="Volodimir" style="width: 25%; opacity: 0.7;" >
+  <img id="volodimir" src="static/volodimir.jpg" alt="Volodimir" style="width: 25%; opacity: 0.7;" >
+  <!-- <img src="static/volodimir.jpg" alt="Volodimir" style="width: 25%; opacity: 0.7;" > -->
   <div id="newGame" onmouseover="this.style.backgroundColor = 'rgb(45, 116, 160'" onmouseout="this.style.backgroundColor = 'lightskyblue'" onclick="">New Game</div>
   <div id="creditBtn" onmouseover="this.style.backgroundColor = 'rgb(45, 116, 160'" onmouseout="this.style.backgroundColor = 'lightskyblue'" onclick="showCredits()">Credits</div>
   <div id="credits">There is no War! <br><br> Made by Roger, Adrian, Kamil, Leon</div>
@@ -97,6 +102,7 @@
 
 </body>
 <script src="js/menu.js"></script>
+<script src="js/dead.js"></script>
 <script src="js/timer.js" ></script>
 <script src="js/firstMiniGame.js"></script>
 <html>  

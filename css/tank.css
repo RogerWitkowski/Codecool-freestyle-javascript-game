@@ -4,6 +4,10 @@
     overflow: hidden;
  }
 
+ #board {
+     margin-top:35px;
+
+ }
 
 
  .row {
@@ -12,7 +16,7 @@
  }
 
  .cell {
-    padding: 15px;
+    padding: 14px;
 
  }
 
@@ -58,6 +62,14 @@
     background-position: center;
     background-repeat: no-repeat; 
 }
+
+p.demo{
+    margin: auto;
+    color: yellow;
+    font-size: x-large;
+    font-family: "Courier New";
+    width: 70vw;
+  }
 
 .brick {
     background-color: darkgray;

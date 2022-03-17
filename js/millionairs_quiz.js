@@ -104,7 +104,10 @@ function check_correct (){
 }
 
 function check_answer (){
-     if (correct == true && question.innerText == questions [6]) {alert('You\'re lucky, you\'re still alive. We will see how long it will be possible.')}
+     if (correct == true && question.innerText == questions [6]) {
+         alert('You\'re lucky, you\'re still alive. We will see how long it will be possible.')
+         setTimeout(function() {  window.location.href="endscreen.html"; }, 2500);
+        }
 if (correct == true) {change_text()} else {alert('Uuu wrong answer. You better hurry up.')}
 }
 change_text ()
