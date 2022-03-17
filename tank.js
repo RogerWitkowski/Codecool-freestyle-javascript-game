@@ -1,5 +1,5 @@
 let player;
-let gameSwitch = 2;
+let gameSwitch = 1;
 let game2Switch = 1;
 let gameWidth = 30;
 let gameHeight = 20;
@@ -129,7 +129,7 @@ function checkIfgrass(cells) {
 
 function checkIfWall(boardRow,x,y) {
     isWall = false;
-    if (boardRow[y].children[x].className === "cell brick") {
+    if (boardRow[y].children[x].className === "cell brick" || boardRow[y].children[x].className === "cell enemy-down" || boardRow[y].children[x].className === "cell enemy-up" || boardRow[y].children[x].className === "cell enemy-left" || boardRow[y].children[x].className === "cell enemy-right") {
         isWall = true;
         return isWall;
     }
@@ -434,4 +434,4 @@ function mapLayout2(board) {
         }
 }
 
-window.onload = initGame2
+window.onload = initGame
