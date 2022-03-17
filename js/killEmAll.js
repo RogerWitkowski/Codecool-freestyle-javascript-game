@@ -33,9 +33,11 @@ function checkLives() {
     // sprawdza ilosc pozostalych zyc gracza
     lives--;
     if (lives == -1) {
-        alert("GAME OVER");
-        document.location.reload();
-        clearInterval(interval)
+        alert("HAHAH YOU FOOL!!!! TRY AGIN YOUR LUCK");
+        document.location(setTimeout(function () {
+            window.location.href = "index.html";
+        },
+            800));
     } else {
         x = canvas.width / 2;
         y = canvas.height - 30;
@@ -65,16 +67,16 @@ function drawScore() {
 function checkScore() {
     // funkcja sprawdza ilosc punktow, jak gracz wygra to wyswietla komunikat i przerywa gre
     if (score == 304) {
-        alert("You WIN , Congratz");
-        document.location.reload();
-        clearInterval(interval)
+        alert("Oha You Won... How is possible?!?!?! Well Done Young Padawan!!!!");
+        document.location(setTimeout(function () {
+            window.location.href = "endscreen.html";
+        },
+            800));
     }
-
 }
 
 
-// tworzenie listy cegiel
-let bricks = [];
+let bricks = []; // tworzenie listy cegiel
 for (let col = 0; col < brickColumnCount; col++) {
     bricks[col] = [];
     for (let row = 0; row < brickRowCount; row++) {
@@ -113,7 +115,6 @@ function collisionDetection() {
                     dy = -dy;
                     bCoordinates.status = 0;
                     score++;
-                    console.log(score)
                     checkScore();
                 }
             }
@@ -197,7 +198,7 @@ function keyUpHandler(e) {
 
 
 function draw() {
-    // funkcja aktywujaca wszystkie funkcje gry, funkcja czysci plansze TODO:
+    // funkcja aktywujaca wszystkie funkcje gry, funkcja czysci plansze
     context.clearRect(0, 0, canvas.width, canvas.height);
     drawBricks();
     drawBall();
@@ -223,5 +224,5 @@ function draw() {
     requestAnimationFrame(draw);
 }
 
-// wywolywanie funkcji
-draw();
+
+draw();   // !wywolywanie funkcji TODO:

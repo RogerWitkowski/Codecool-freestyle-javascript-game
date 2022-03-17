@@ -10,7 +10,6 @@ evilB.addEventListener('click', () => {
     let block = document.getElementById("x");
     block.appendChild(img);
     setTimeout(function() {  window.location.href="rocketgame.html"; }, 6000);
-    
 })
 
 document.addEventListener('mousemove', (e) => {

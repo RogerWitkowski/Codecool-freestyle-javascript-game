@@ -1,49 +1,48 @@
 #evilButton {
-    position: absolute;
-    white-space: nowrap;
-    font-size: 2rem;
+  position: absolute;
+  white-space: nowrap;
+  font-size: 2rem;
 }
 
 #bodyButton {
-    margin: 0;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 
 body {
-        background: #202028;
-        color: #fff;
-        font-family: sans-serif;
-        font-size: 2em;
-        text-align: center;
-      }
+  background: #202028;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 2em;
+  text-align: center;
+}
 
 p1 {
-        margin: auto;
-        color: yellow;
-        font-size: x-large;
-        font-family: "Courier New";
-      }
+  margin: auto;
+  color: yellow;
+  font-size: x-large;
+  font-family: "Courier New";
+}
 
-   .f-size17 {
+.f-size17 {
+  color: white;
+  font-size: medium;
+  font-family: "Courier New";;
+}
 
-        color: white;
-        font-size: medium;
-        font-family: "Courier New";;
-   }
+.timer {
+  margin-left: 20%;
+  color: yellow;
+  font-size: medium;
+  font-family: "Courier New";
+}
+input[type="radio"]{
 
-   .timer {
-        margin-left: 20%;
-        color: yellow;
-        font-size: medium;
-        font-family: "Courier New";
-      }
-   input[type="radio"]{
+}
 
-   }
-
-   img {
-       margin-left: 100px
-   }
+img {
+  margin-left: 100px
+}
 

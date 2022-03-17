@@ -1,40 +1,42 @@
-
- body {
+body {
     background-color: black;
     overflow: hidden;
- }
-
- #board {
-     margin-top:35px;
-
- }
+}
 
 
- .row {
+#board {
+    margin-top:35px;
+}
+
+
+.row {
     display: flex;
     justify-content: center;
- }
+}
 
- .cell {
+
+.cell {
     padding: 14px;
+}
 
- }
 
- .player {
-     background-color: darkgray;
-     background-image: url("static/tank.png");
-     background-position: center;
-     background-repeat: no-repeat; 
-     transform: rotate(0deg);
- }
-
- .player-down {
+.player {
     background-color: darkgray;
     background-image: url("static/tank.png");
     background-position: center;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
+    transform: rotate(0deg);
+}
+
+
+.player-down {
+    background-color: darkgray;
+    background-image: url("static/tank.png");
+    background-position: center;
+    background-repeat: no-repeat;
     transform: rotate(180deg);
 }
+
 
 .player-left {
     background-color: darkgray;
@@ -44,24 +46,28 @@
     transform: rotate(270deg);
 }
 
+
 .player-right {
     background-color: darkgray;
     background-image: url("static/tank.png");
     background-position: center;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     transform: rotate(90deg);
 }
- .empty {
-     background-color: darkgray;
- }
 
 
- .grass {
+.empty {
+    background-color: darkgray;
+}
+
+
+.grass {
     background-color: darkgray;
     background-image: url("static/grass.png");
     background-position: center;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
 }
+
 
 p.demo{
     margin: auto;
@@ -69,36 +75,41 @@ p.demo{
     font-size: x-large;
     font-family: "Courier New";
     width: 70vw;
-  }
+}
+
 
 .brick {
     background-color: darkgray;
     background-image: url("static/brick.png");
     background-position: center;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
 }
+
 
 .exit {
     background-color: darkgray;
     background-image: url("static/exit.gif");
     background-position: center;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
 }
+
 
 .enemy-up {
     background-color: darkgray;
     background-image: url("static/enemy.png");
     background-position: center;
     background-repeat: no-repeat;
-    transform: rotate(180deg); 
+    transform: rotate(180deg);
 }
+
 
 .enemy-down {
     background-color: darkgray;
     background-image: url("static/enemy.png");
     background-position: center;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
 }
+
 
 .enemy-left {
     background-color: darkgray;
@@ -108,6 +119,7 @@ p.demo{
     transform: rotate(90deg);
 }
 
+
 .enemy-right {
     background-color: darkgray;
     background-image: url("static/enemy.png");
@@ -116,9 +128,10 @@ p.demo{
     transform: rotate(270deg);
 }
 
+
 .bullet {
     background-color: darkgray;
     background-image: url("static/bullet.png");
     background-position: center;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
 }

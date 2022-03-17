@@ -8,7 +8,7 @@ body {
         font-family: sans-serif;
         font-size: 2em;
         text-align: center;
-      }
+}
 
 #game {
     margin: auto;
@@ -54,7 +54,7 @@ body {
 }
 
 @keyframes jump {
-  0% {top: 225px;}
+    0% {top: 225px;}
     /*30% {top: 150px;}*/
     100% {top: 225px}
 }

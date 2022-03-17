@@ -1,108 +1,124 @@
 <html>
-<head>
-    <title>There is no War!</title>
-    <style>
-      body {
-        background: #292828;
-        color: #fff;
-        font-family: sans-serif;
-        font-size: 2em;
-        text-align: center;
-      }
-      canvas {
-        border: solid .2em #fff;
-        height: 90vh;
-      }
-      #main{
-        display: none;
-      }
-      #newGame, #creditBtn, #backBtn{
-        text-align: center;
-        vertical-align: middle;
-        border: 2px solid #152569;
-        border-radius: 7px;
-        background-color: lightskyblue;
-        color: yellow;
-        font-size: 32px;
-        font-weight: bold;
-        font-family: "Courier New";
-        width: 5em;
-        margin: 5px auto;
-        align-self: center;
-       
-      }
-      p.demo{
-        margin: auto;
-        color: yellow;
-        font-size: x-large;
-        font-family: "Courier New";
-        width: 70vw;
-      }
-      #theHead{
-        margin: auto;
-        color: yellow;
-        font-size: 2em;
-        font-family: "Courier New";
-      }
-      #credits{
-        margin: auto;
-        color: yellow;
-        font-size: 1em;
-        font-family: "Courier New";
-        display: none;
-        background-color: inherit;
-        margin: 0;
-        position: absolute;
-        top: 35%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-      #invisibleStart{
-        border: 2px solid #202028;
-        border-radius: 14px;
-        background-color: none;
-        color: #202028;
-        font-size: 32px;
-        font-weight: bold;
-        font-family: "Courier New";
-        width: 7em;
-        margin: 5px auto;
-        position: absolute;
-        top: 33%;
-        left: 42%;
-        opacity: 0%;
-      }
-      #backBtn{
-        display: none;
-        text-align: center;
-        margin: 0;
-        position: absolute;
-        top: 60%;
-        left: 65%;
-        transform: translate(-50%, -50%);
-        font-size: 20px;
-      }
 
-      #volodimir {
-        border-radius: 15px;
-        border: 5px solid #152569;
-      }
-    </style>
+<head>
+  <title>There is no War!</title>
+  <style>
+    body {
+      background: #292828;
+      color: #fff;
+      font-family: sans-serif;
+      font-size: 2em;
+      text-align: center;
+    }
+
+    canvas {
+      border: solid .2em #fff;
+      height: 90vh;
+    }
+
+    #main {
+      display: none;
+    }
+
+    #newGame,
+    #creditBtn,
+    #backBtn {
+      text-align: center;
+      vertical-align: middle;
+      border: 2px solid #152569;
+      border-radius: 7px;
+      background-color: lightskyblue;
+      color: yellow;
+      font-size: 32px;
+      font-weight: bold;
+      font-family: "Courier New";
+      width: 5em;
+      margin: 5px auto;
+      align-self: center;
+
+    }
+
+    p.demo {
+      margin: auto;
+      color: yellow;
+      font-size: x-large;
+      font-family: "Courier New";
+      width: 70vw;
+    }
+
+    #theHead {
+      margin: auto;
+      color: yellow;
+      font-size: 2em;
+      font-family: "Courier New";
+    }
+
+    #credits {
+      margin: auto;
+      color: yellow;
+      font-size: 1em;
+      font-family: "Courier New";
+      display: none;
+      background-color: inherit;
+      margin: 0;
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    #invisibleStart {
+      border: 2px solid #202028;
+      border-radius: 14px;
+      background-color: none;
+      color: #202028;
+      font-size: 32px;
+      font-weight: bold;
+      font-family: "Courier New";
+      width: 7em;
+      margin: 5px auto;
+      position: absolute;
+      top: 33%;
+      left: 42%;
+      opacity: 0%;
+    }
+
+    #backBtn {
+      display: none;
+      text-align: center;
+      margin: 0;
+      position: absolute;
+      top: 60%;
+      left: 65%;
+      transform: translate(-50%, -50%);
+      font-size: 20px;
+    }
+
+    #volodimir {
+      border-radius: 15px;
+      border: 5px solid #152569;
+    }
+  </style>
 </head>
+
 <body>
   <br>
-  <img id="volodimir" src="static/volodimir.jpg" alt="Volodimir" style="width: 25%; opacity: 0.7;" >
+  <img id="volodimir" src="static/volodimir.jpg" alt="Volodimir" style="width: 25%; opacity: 0.7;">
   <!-- <img src="static/volodimir.jpg" alt="Volodimir" style="width: 25%; opacity: 0.7;" > -->
-  <div id="newGame" onmouseover="this.style.backgroundColor = 'rgb(45, 116, 160'" onmouseout="this.style.backgroundColor = 'lightskyblue'" onclick="">New Game</div>
-  <div id="creditBtn" onmouseover="this.style.backgroundColor = 'rgb(45, 116, 160'" onmouseout="this.style.backgroundColor = 'lightskyblue'" onclick="showCredits()">Credits</div>
+  <div id="newGame" onmouseover="this.style.backgroundColor = 'rgb(45, 116, 160'"
+    onmouseout="this.style.backgroundColor = 'lightskyblue'" onclick="">New Game</div>
+  <div id="creditBtn" onmouseover="this.style.backgroundColor = 'rgb(45, 116, 160'"
+    onmouseout="this.style.backgroundColor = 'lightskyblue'" onclick="showCredits()">Credits</div>
   <div id="credits">There is no War! <br><br> Made by Roger, Adrian, Kamil, Leon</div>
-  <div id="backBtn" onmouseover="this.style.backgroundColor = 'rgb(45, 116, 160'" onmouseout="this.style.backgroundColor = 'lightskyblue'" onclick="goBack()">Back</div>
-  <div id="invisibleStart" onmouseover="this.style.backgroundColor = 'rgb(45, 116, 160'; this.style.opacity = '100%'" onmouseout="this.style.opacity = '0%'" onclick="timer(start=true), intro()">Tactical Maneuvers</div><br>
+  <div id="backBtn" onmouseover="this.style.backgroundColor = 'rgb(45, 116, 160'"
+    onmouseout="this.style.backgroundColor = 'lightskyblue'" onclick="goBack()">Back</div>
+  <div id="invisibleStart" onmouseover="this.style.backgroundColor = 'rgb(45, 116, 160'; this.style.opacity = '100%'"
+    onmouseout="this.style.opacity = '0%'" onclick="timer(start=true), intro()">Tactical Maneuvers</div><br>
   <div id="timer" style="font-size: medium; font-family:'Courier New'"></div><br>
 
 </body>
 <script src="js/menu.js"></script>
 <script src="js/dead.js"></script>
-<script src="js/timer.js" ></script>
+<script src="js/timer.js"></script>
 <script src="js/firstMiniGame.js"></script>
-<html>  
+<html>

@@ -2,16 +2,19 @@ body {
   background: #292828;
 }
 
+
 #logo {
   height: 90vh;
   display: flex;
   justify-content: center;
 }
 
+
 .item {
   height: 500px;
   align-self: center;
 }
+
 
 .fade-in {
   animation: fadeIn ease 5s;
@@ -20,6 +23,8 @@ body {
   -o-animation: fadeIn ease 5s;
   -ms-animation: fadeIn ease 5s;
 }
+
+
 @keyframes fadeIn {
   0% {opacity:0;}
   100% {opacity:1;}
@@ -30,15 +35,18 @@ body {
   100% {opacity:1;}
 }
 
+
 @-webkit-keyframes fadeIn {
   0% {opacity:0;}
   100% {opacity:1;}
 }
 
+
 @-o-keyframes fadeIn {
   0% {opacity:0;}
   100% {opacity:1;}
 }
+
 
 @-ms-keyframes fadeIn {
   0% {opacity:0;}
