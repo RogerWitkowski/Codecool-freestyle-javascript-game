@@ -36,10 +36,10 @@ body {
     left: 600px;
     background-image: url(rocket.png);
     position: relative;
-    animation: block 2s infinite linear;}
+    animation: block 200s infinite linear;}
 
 .animate{
-    animation: jump 500ms infinite;
+    animation: jump 1200ms infinite;
 }
 
 .points {
