@@ -5,6 +5,12 @@ let y = canvas.height - 30;
 let dx = 2;
 let dy = -2;
 let ballRadius = 10;
+let paddleHeight = 10;
+let paddleWidth = 75;
+let paddleX = (canvas.width - paddleWidth) / 2;
+let rightMove = false;
+let leftMove = false
+
 
 function drawBall() {
     context.beginPath();
@@ -13,6 +19,16 @@ function drawBall() {
     context.fill();
     context.closePath();
 }
+
+function drawPaddle() {
+    context.beginPath();
+    context.rect(paddleX, canvas.height - paddleHeight, paddleWidth, paddleHeight);
+    context.fillStyle = "#FFFACD";
+    context.closePath();
+}
+
+
+
 
 function draw() {
     context.clearRect(0, 0, canvas.width, canvas.height);
@@ -34,6 +50,6 @@ function bouncingBallOffWalls(){
     }
 }
 
+document.addEventListener("keydown", keyDownHandler, false)
+document.addEventListener("keyup", keyUpHandler, false)
 setInterval(draw, 10);
-
-

@@ -123,7 +123,8 @@ function checkAnswers2(answer2){
         var narrator = "Your age is also good. You passed the first test..."
         i = 0;
         speed = 50;
-        typeWriter(narrator, i, speed, "demo_2")
+        typeWriter(narrator, i, speed, "demo_2");
+        setTimeout(function() {  window.location.href="button.html"; }, 9000);
     } else {
         dead(3800, "demo_2", "Your passport says your age is different! *Bazooka tears your legs apart*")
     }

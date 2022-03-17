@@ -50,4 +50,3 @@ function points_counter (){
         rocket_speed()}
 }
 
-
