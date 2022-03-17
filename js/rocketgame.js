@@ -14,8 +14,9 @@ var checkDead = setInterval (function(){
 
     block.style.animation = "none"
         block.style.display = "none"
-        alert ("u lose")
         game = false
+        document.body.innerHTML = '<p1> You are dead </p1>'
+        setTimeout(function() {  window.location.href="preview.html"; }, 4000)
     }
 },10)
 
