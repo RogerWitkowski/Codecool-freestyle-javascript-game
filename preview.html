@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>There is no War</title>
+    <title>There is no War!</title>
     <style>
       body {
         background: #202028;
@@ -58,17 +58,18 @@
       }
       #invisibleStart{
         border: 2px solid #202028;
-        border-radius: 7px;
-        background-color: #202028;
+        border-radius: 14px;
+        background-color: none;
         color: #202028;
         font-size: 32px;
         font-weight: bold;
         font-family: "Courier New";
-        width: 5em;
+        width: 7em;
         margin: 5px auto;
         position: absolute;
-        top: 66%;
-        left: 12%;
+        top: 38%;
+        left: 42%;
+        opacity: 0%;
       }
       #backBtn{
         display: none;
@@ -83,16 +84,18 @@
     </style>
 </head>
 <body>
-    <div id="theHead">There is no War!</div>
-    <div id="newGame" onmouseover="this.style.backgroundColor = 'rgb(45, 116, 160'" onmouseout="this.style.backgroundColor = 'lightskyblue'" onclick="">New Game</div>
-    <div id="creditBtn" onmouseover="this.style.backgroundColor = 'rgb(45, 116, 160'" onmouseout="this.style.backgroundColor = 'lightskyblue'" onclick="showCredits()">Credits</div>
-    <div id="credits">There is no War! <br><br> Made by Roger, Adrian, Kamil, Leon</div>
-    <div id="backBtn" onmouseover="this.style.backgroundColor = 'rgb(45, 116, 160'" onmouseout="this.style.backgroundColor = 'lightskyblue'" onclick="goBack()">Back</div>
-    <div id="invisibleStart" onmouseover="this.style.backgroundColor = 'rgb(45, 116, 160'" onmouseout="this.style.backgroundColor = 'lightskyblue'" onclick="timer(start=true), intro()">New Game</div><br>
-    <div id="timer" style="font-size: medium; font-family:'Courier New'"></div><br>
+  <br>
+  <div id="theHead">There is no War!</div>
+  <img src="volodimir.jpg" alt="Volodimir" style="width: 25%; opacity: 0.7;" >
+  <div id="newGame" onmouseover="this.style.backgroundColor = 'rgb(45, 116, 160'" onmouseout="this.style.backgroundColor = 'lightskyblue'" onclick="">New Game</div>
+  <div id="creditBtn" onmouseover="this.style.backgroundColor = 'rgb(45, 116, 160'" onmouseout="this.style.backgroundColor = 'lightskyblue'" onclick="showCredits()">Credits</div>
+  <div id="credits">There is no War! <br><br> Made by Roger, Adrian, Kamil, Leon</div>
+  <div id="backBtn" onmouseover="this.style.backgroundColor = 'rgb(45, 116, 160'" onmouseout="this.style.backgroundColor = 'lightskyblue'" onclick="goBack()">Back</div>
+  <div id="invisibleStart" onmouseover="this.style.backgroundColor = 'rgb(45, 116, 160'; this.style.opacity = '100%'" onmouseout="this.style.opacity = '0%'" onclick="timer(), intro()">Tactical Maneuvers</div><br>
+  <div id="timer" style="font-size: medium; font-family:'Courier New'"></div><br>
 
 </body>
 <script src="menu.js"></script>
 <script src="timer.js" ></script>
 <script src="firstMiniGame.js"></script>
-<html>
+<html>  

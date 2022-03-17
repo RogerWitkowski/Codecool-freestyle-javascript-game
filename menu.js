@@ -15,6 +15,9 @@ var goBack = function(){
     document.getElementById("creditBtn").style.display = "block";
   };
 
+  img = document.createElement("img");
+  img.src = "volodimir.jpg";
+
 
 function typeWriter(txt,i,speed,paragraph){  
   if (i < txt.length){
@@ -44,4 +47,14 @@ var foo = function(){
     timer = false
   }
   document.body.appendChild(button);
+}
+function dead(refreshTime, paragraph, txt_1){
+  document.body.innerHTML = "<br><p class=\"demo\" id=\"demo_1\"></p><br>";
+  document.body.innerHTML += "<br><p class=\"demo\" id=\"demo_2\"></p><br>";
+  document.body.innerHTML += "<br><p class=\"demo\" id=\"demo_3\"></p><br>";
+
+  var i = 0;
+  var speed = 50;
+  typeWriter(txt_1, i, speed, paragraph);
+  setTimeout(function () {location.reload()}, refreshTime);
 }

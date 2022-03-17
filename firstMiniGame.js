@@ -17,16 +17,17 @@ function questions() {
 
 function clean_page(){
     document.body.innerHTML = "<br><p class=\"demo\" id=\"demo_1\"></p><br>";
+    document.body.innerHTML += "<br><p class=\"demo\" id=\"demo_2\"></p><br>";
     document.body.innerHTML += "<input type=\"text\" placeholder =\"Type here\" id=\"userinput\"><br><br>";
     document.body.innerHTML += "<button type=\"submit\" id=\"submit\">click me</button><br>";
 }
 
 function myNameCheck1(myName){
-    if (myName === "your name"){
-        alert("well done");
-        yourRealName()
+    if (myName == "your name"){
+        yourRealName();
     } else {
-        alert("You ded");
+        console.log("Pepsi");
+        dead(3500, "demo_1", "That's a wrong answer...");
     }
 }
 
@@ -44,7 +45,7 @@ function yourRealName(){
 
 function myNameCheck2(myName){
     if (myName === "your real name"){
-        alert("You ded");
+        dead(3000, "demo_1", "That is not your real name.");
     } else {
         var myNameFalse = randomizeName(myName);
         yourNameIs(myNameFalse);
@@ -83,15 +84,12 @@ function whatIsYourAge(answer1){
 }
 function soYourAgeIs(age){
     if (age < 18){
-        var response = "You are to young to live here";
-        console.log(response);
+        dead(3200, "demo_1", "You are to young to live here");
     } else if (age > 80){
-        var response = "You are to old to live here";
-        console.log(response);
+        dead(3200, "demo_1", "You are to old to live here");
     } else {
     var falseAge = 20+parseInt(age);
-    var response = "So your age is " + falseAge + "! Yes?";
-    console.log(response);
+    var response = "So your age is " + falseAge + "! Yes?";;
     return response;
     }
 }
@@ -107,18 +105,26 @@ function confirmAge(response, answer1){
 }
 
 function checkAnswers(answer1, answer2){
+    clean_page()
     if (answer1 == "no"){
-        var narrator = "Your name is good"
-        alert("You good")
+        var narrator = "Your name checks out..."
+        i = 0;
+        speed = 50;
+        typeWriter(narrator, i, speed, "demo_1")
     } else {
-        var narrator = "Your id says something else."
-        alert("You ded.")
-    }
+        dead(3800, "demo_1", "Your id says your name is different. *Bullet to the face*")
+    } 
+    setTimeout(function() {  checkAnswers2(answer2) }, 3200);
+    
+}
+
+function checkAnswers2(answer2){
     if(answer2 == "no"){
-        var narrator = "Your age is good"
-        alert("You good")
+        var narrator = "Your age is also good. You passed the first test..."
+        i = 0;
+        speed = 50;
+        typeWriter(narrator, i, speed, "demo_2")
     } else {
-        var narrator = "Your id says something else."
-        alert("You ded.")
+        dead(3800, "demo_2", "Your passport says your age is different! *Bazooka tears your legs apart*")
     }
 }
