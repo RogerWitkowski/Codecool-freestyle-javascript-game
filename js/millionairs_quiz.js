@@ -104,8 +104,9 @@ function check_correct (){
 }
 
 function check_answer (){
-     if (correct == true && question.innerText == questions [6]) {alert('You\'re lucky, you\'re still alive. We will see how long it will be possible.')}
-if (correct == true) {change_text()} else {alert('Uuu wrong answer. You better hurry up.')}
+     if (correct == true && question.innerText == questions [6]) {alert('You\'re lucky, you\'re still alive. We will see how long it will be possible.'), setTimeout(function() {  window.location.href="endscreen.html"; }, 4000);}
+if (correct == true) {change_text()} else {alert('Uuu wrong answer. Bye bye!.'), setTimeout(function() {  window.location.href="preview.html"; }, 2000);}
+
 }
 change_text ()
 

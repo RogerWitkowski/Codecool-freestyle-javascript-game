@@ -33,7 +33,7 @@ function intro(){ // if you want to add text; Create a new var with your text; d
   var txt_2 = 'Welcome to Ukraine! - Calls something strange behind you.' 
   var txt_3 = 'There is no war here! I\'m Volodimir, the russian tractor. Prepare to die.'
   var txt_4 = 'Your task is to escape from Volodimir the Tractor. Good luck!'
-  var speed = 5;
+  var speed = 25;
   var i = 0;
   typeWriter(txt_1, i, speed, "demo_1")
   let timer = setTimeout(function () {typeWriter(txt_2, i, speed, "demo_2")}, speed*txt_1.length+300)
@@ -49,14 +49,4 @@ var foo = function(){
     questions()
   }
   document.body.appendChild(button);
-}
-function dead(refreshTime, paragraph, txt_1){
-  document.body.innerHTML = "<br><p class=\"demo\" id=\"demo_1\"></p><br>";
-  document.body.innerHTML += "<br><p class=\"demo\" id=\"demo_2\"></p><br>";
-  document.body.innerHTML += "<br><p class=\"demo\" id=\"demo_3\"></p><br>";
-
-  var i = 0;
-  var speed = 50;
-  typeWriter(txt_1, i, speed, paragraph);
-  setTimeout(function () {location.reload()}, refreshTime);
 }

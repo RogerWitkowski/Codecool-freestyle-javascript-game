@@ -2,8 +2,8 @@ let player;
 let gameSwitch = 1;
 let game2Switch = 1;
 let gameWidth = 30;
-let gameHeight = 20;
-let bulletSwitch = 0
+let gameHeight = 20; 
+let bulletSwitch = 0;
 
 function update(board) {
     if (gameSwitch == 1) {
@@ -39,6 +39,8 @@ function update2(board) {
 }
 
 function initGame2() {
+    text = document.getElementsByClassName("demo");
+    text[0].outerHTML = "<p class=\"demo\" style=\"display:flex;justify-content: center;\">Avoid enemy bullets!</p>";
     document.getElementById("board").innerHTML = "";
     htmlBoard = new HTMLBoard(gameWidth,gameHeight, document.getElementById("board"),2);
     mapLayout2(htmlBoard);
@@ -156,7 +158,7 @@ function checkIfExit(boardRow,x,y) {
 
 
 function youDied() {
-    alert("DIE")
+    window.location.href="dead.html";
 }
 
 
@@ -183,7 +185,7 @@ class Point {
                         initGame2();
                     } else if (game2Switch == 1) {
                         game2Switch = 2
-                        alert("end")
+                        setTimeout(function() {  window.location.href="quiz.html"; }, 500);
                     }
                 } else if(isBullet){
                     youDied();
@@ -205,7 +207,7 @@ class Point {
                         initGame2();
                     } else if (game2Switch == 1) {
                         game2Switch = 2
-                        alert("end")
+                        setTimeout(function() {  window.location.href="quiz.html"; }, 500);
                     }
                 } else if(isBullet){
                     youDied();
@@ -232,7 +234,7 @@ class Point {
                         initGame2();
                     } else if (game2Switch == 1) {
                         game2Switch2 = 2
-                        alert("end")
+                        setTimeout(function() {  window.location.href="quiz.html"; }, 500);
                     }
                 } else if(isBullet){
                     youDied();
@@ -255,7 +257,7 @@ class Point {
                         initGame2();
                     } else if (game2Switch == 1) {
                         game2Switch = 2
-                        alert("end")
+                        setTimeout(function() {  window.location.href="quiz.html"; }, 500);
                     }
                 } else if(isBullet){
                     youDied();

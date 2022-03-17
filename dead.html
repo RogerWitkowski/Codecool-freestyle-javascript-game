@@ -16,13 +16,25 @@
             href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
             crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/tank.css">
-    <script src="js/dead.js"></script>
+    <style>
+         body {
+    background-color: black;
+    overflow: hidden;
+ }
+ p.demo{
+    margin: auto;
+    color: yellow;
+    font-size: x-large;
+    font-family: "Courier New";
+    width: 70vw;
+  }
+    </style>
 </head>
 <body>
-    <script src="js/tank.js"></script>
-    <p class="demo" style="display:flex;justify-content: center;">Find enemy tanks!</p>
-    <div id="board"></div>
+    <script src="js/dead.js"></script>
+    <script>
+        dead(1000, "demo_1", "Vlodimir towed your tank away!");
+    </script>
 </body>
 <script
 src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
