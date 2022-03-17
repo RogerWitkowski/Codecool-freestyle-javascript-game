@@ -9,6 +9,7 @@ evilB.addEventListener('click', () => {
     img.src = "idiNaChuj.jpg";
     let block = document.getElementById("x");
     block.appendChild(img);
+    
 })
 
 document.addEventListener('mousemove', (e) => {
