@@ -24,7 +24,7 @@ function rocket_speed (){
     var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
     var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
     if (points >= 10) {
-         setTimeout(function() {  window.location.href="tank.html"; }, 10);
+         setTimeout(function() {  window.location.href="tank.html"; }, 5);
     }
     console.log (points)
     if (points == 1) {
